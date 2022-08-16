@@ -39,6 +39,7 @@
             this.btnCrearPerfil.TabIndex = 0;
             this.btnCrearPerfil.Text = "Crear Perfil";
             this.btnCrearPerfil.UseVisualStyleBackColor = true;
+            this.btnCrearPerfil.Click += new System.EventHandler(this.BtnCrearPerfil_Click);
             // 
             // Inicio
             // 

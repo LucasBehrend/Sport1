@@ -16,5 +16,12 @@ namespace Sport1
         {
             InitializeComponent();
         }
+
+        private void BtnCrearPerfil_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CrearPerfil f3 = new CrearPerfil();
+            f3.Show();
+        }
     }
 }
