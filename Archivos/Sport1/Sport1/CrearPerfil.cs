@@ -25,8 +25,29 @@ namespace Sport1
 
         private void CmbTipo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int tipo = cmbTipo.SelectedIndex;
-            tipo++;
+            int rol = cmbTipo.SelectedIndex;
+            rol++;
+        }
+
+        private void CrearPerfil_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAceptarPerfil_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Inicio f2 = new Inicio();
+            f2.Show();
+        }
+        private void CmbDeporte_SelectedIndex(object sender, EventArgs e)
+        { 
+
+        }
+
+        private void CrearPerfil_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

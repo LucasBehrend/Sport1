@@ -52,6 +52,12 @@
     <Compile Include="CrearPerfil.Designer.cs">
       <DependentUpon>CrearPerfil.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrearPerfil1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearPerfil1.Designer.cs">
+      <DependentUpon>CrearPerfil1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CrearPerfil.resx">
       <DependentUpon>CrearPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearPerfil1.resx">
+      <DependentUpon>CrearPerfil1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

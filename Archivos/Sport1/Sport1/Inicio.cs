@@ -20,7 +20,7 @@ namespace Sport1
         private void BtnCrearPerfil_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CrearPerfil f3 = new CrearPerfil();
+            CrearPerfil1 f3 = new CrearPerfil1();
             f3.Show();
         }
     }
