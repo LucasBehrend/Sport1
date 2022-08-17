@@ -64,7 +64,6 @@
             this.btnPerfil1.TabIndex = 1;
             this.btnPerfil1.Text = "Perfil 1";
             this.btnPerfil1.UseVisualStyleBackColor = true;
-            this.btnPerfil1.Visible = false;
             // 
             // btnPerfil2
             // 
@@ -74,7 +73,6 @@
             this.btnPerfil2.TabIndex = 2;
             this.btnPerfil2.Text = "Perfil 2";
             this.btnPerfil2.UseVisualStyleBackColor = true;
-            this.btnPerfil2.Visible = false;
             // 
             // btnPerfil3
             // 
@@ -84,7 +82,6 @@
             this.btnPerfil3.TabIndex = 3;
             this.btnPerfil3.Text = "Perfil 3";
             this.btnPerfil3.UseVisualStyleBackColor = true;
-            this.btnPerfil3.Visible = false;
             // 
             // btnPerfil4
             // 
@@ -94,7 +91,6 @@
             this.btnPerfil4.TabIndex = 4;
             this.btnPerfil4.Text = "Perfil 4";
             this.btnPerfil4.UseVisualStyleBackColor = true;
-            this.btnPerfil4.Visible = false;
             // 
             // btnPerfil5
             // 
@@ -104,7 +100,6 @@
             this.btnPerfil5.TabIndex = 5;
             this.btnPerfil5.Text = "Perfil 5";
             this.btnPerfil5.UseVisualStyleBackColor = true;
-            this.btnPerfil5.Visible = false;
             // 
             // btnPerfil10
             // 
@@ -114,7 +109,6 @@
             this.btnPerfil10.TabIndex = 10;
             this.btnPerfil10.Text = "Perfil 10";
             this.btnPerfil10.UseVisualStyleBackColor = true;
-            this.btnPerfil10.Visible = false;
             // 
             // btnPerfil9
             // 
@@ -124,7 +118,6 @@
             this.btnPerfil9.TabIndex = 9;
             this.btnPerfil9.Text = "Perfil 9";
             this.btnPerfil9.UseVisualStyleBackColor = true;
-            this.btnPerfil9.Visible = false;
             // 
             // btnPerfil8
             // 
@@ -134,7 +127,6 @@
             this.btnPerfil8.TabIndex = 8;
             this.btnPerfil8.Text = "Perfil 8";
             this.btnPerfil8.UseVisualStyleBackColor = true;
-            this.btnPerfil8.Visible = false;
             // 
             // btnPerfil7
             // 
@@ -144,7 +136,6 @@
             this.btnPerfil7.TabIndex = 7;
             this.btnPerfil7.Text = "Perfil 7";
             this.btnPerfil7.UseVisualStyleBackColor = true;
-            this.btnPerfil7.Visible = false;
             // 
             // btnPerfil6
             // 
@@ -154,7 +145,6 @@
             this.btnPerfil6.TabIndex = 6;
             this.btnPerfil6.Text = "Perfil 6";
             this.btnPerfil6.UseVisualStyleBackColor = true;
-            this.btnPerfil6.Visible = false;
             // 
             // btnPerfil15
             // 
@@ -164,7 +154,6 @@
             this.btnPerfil15.TabIndex = 15;
             this.btnPerfil15.Text = "Perfil 15";
             this.btnPerfil15.UseVisualStyleBackColor = true;
-            this.btnPerfil15.Visible = false;
             // 
             // btnPerfil14
             // 
@@ -174,7 +163,6 @@
             this.btnPerfil14.TabIndex = 14;
             this.btnPerfil14.Text = "Perfil 14";
             this.btnPerfil14.UseVisualStyleBackColor = true;
-            this.btnPerfil14.Visible = false;
             // 
             // btnPerfil13
             // 
@@ -184,7 +172,6 @@
             this.btnPerfil13.TabIndex = 13;
             this.btnPerfil13.Text = "Perfil 13";
             this.btnPerfil13.UseVisualStyleBackColor = true;
-            this.btnPerfil13.Visible = false;
             // 
             // btnPerfil12
             // 
@@ -194,7 +181,6 @@
             this.btnPerfil12.TabIndex = 12;
             this.btnPerfil12.Text = "Perfil 12";
             this.btnPerfil12.UseVisualStyleBackColor = true;
-            this.btnPerfil12.Visible = false;
             // 
             // btnPerfil11
             // 
@@ -204,7 +190,6 @@
             this.btnPerfil11.TabIndex = 11;
             this.btnPerfil11.Text = "Perfil 11";
             this.btnPerfil11.UseVisualStyleBackColor = true;
-            this.btnPerfil11.Visible = false;
             // 
             // Inicio
             // 
@@ -229,6 +214,7 @@
             this.Controls.Add(this.btnCrearPerfil);
             this.Name = "Inicio";
             this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.Inicio_Load);
             this.ResumeLayout(false);
 
         }

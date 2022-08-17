@@ -23,5 +23,10 @@ namespace Sport1
             CrearPerfil1 f3 = new CrearPerfil1();
             f3.Show();
         }
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
