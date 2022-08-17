@@ -44,6 +44,7 @@
             this.btnPerfil3 = new System.Windows.Forms.Button();
             this.btnPerfil2 = new System.Windows.Forms.Button();
             this.btnPerfil1 = new System.Windows.Forms.Button();
+            this.txtNombres1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnCrearPerfil
@@ -206,11 +207,20 @@
             this.btnPerfil1.UseVisualStyleBackColor = true;
             this.btnPerfil1.Visible = false;
             // 
+            // txtNombres1
+            // 
+            this.txtNombres1.Location = new System.Drawing.Point(643, 51);
+            this.txtNombres1.Name = "txtNombres1";
+            this.txtNombres1.Size = new System.Drawing.Size(100, 20);
+            this.txtNombres1.TabIndex = 31;
+            this.txtNombres1.Visible = false;
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.Controls.Add(this.txtNombres1);
             this.Controls.Add(this.btnPerfil15);
             this.Controls.Add(this.btnPerfil14);
             this.Controls.Add(this.btnPerfil13);
@@ -231,6 +241,7 @@
             this.Text = "Inicio";
             this.Load += new System.EventHandler(this.Inicio_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -252,5 +263,6 @@
         private System.Windows.Forms.Button btnPerfil3;
         private System.Windows.Forms.Button btnPerfil2;
         private System.Windows.Forms.Button btnPerfil1;
+        public System.Windows.Forms.TextBox txtNombres1;
     }
 }

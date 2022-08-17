@@ -12,6 +12,8 @@ namespace Sport1
 {
     public partial class Inicio : Form
     {
+        string[] nombres = new string[1000];
+        CrearPerfil.txtNombre.Text = 
         public Inicio()
         {
             InitializeComponent();
