@@ -26,7 +26,12 @@ namespace Sport1
 
         private void Inicio_Load(object sender, EventArgs e)
         {
-
+            Button btnPerfil1 = new Button();
+            btnPerfil1.DialogResult = DialogResult.OK;
+            btnPerfil1.Text = "Perfil 1";
+            btnPerfil1.Location = new Point (24,38);
+            btnPerfil1.Size = new Size(160, 70);
+            Controls.Add(btnPerfil1);
         }
     }
 }
