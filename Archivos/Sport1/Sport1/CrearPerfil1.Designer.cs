@@ -136,11 +136,11 @@
         #endregion
 
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btnAceptarPerfil;
         private System.Windows.Forms.Label lblRol;
         private System.Windows.Forms.ComboBox cmbDeporte;
         private System.Windows.Forms.ComboBox cmbRol;
         private System.Windows.Forms.Label lblDeporte;
+        private System.Windows.Forms.TextBox txtNombre;
     }
 }

@@ -12,8 +12,17 @@ namespace Sport1
 {
     public partial class Inicio : Form
     {
+        string nombre1;
+        int i = 0;
         string[] nombres = new string[1000];
-        CrearPerfil.txtNombre.Text = 
+        public void pasarDatos (string hola)
+        {
+            nombres[i] = hola;
+            i++;
+            MessageBox.Show(nombres[0]);
+            
+        }
+        
         public Inicio()
         {
             InitializeComponent();

@@ -12,6 +12,8 @@ namespace Sport1
 {
     public partial class CrearPerfil1 : Form
     {
+        Inicio f2 = new Inicio();
+        string nombre;
         public CrearPerfil1()
         {
             InitializeComponent();
@@ -20,13 +22,15 @@ namespace Sport1
         private void BtnAceptarPerfil_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Inicio f2 = new Inicio();
+            f2.pasarDatos(nombre);
             f2.Show();
         }
 
         private void TxtNombre_TextChanged(object sender, EventArgs e)
         {
-
+            nombre = txtNombre.Text;
+            
+            
         }
 
         private void CmbRol_SelectedIndexChanged(object sender, EventArgs e)
