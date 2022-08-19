@@ -12,16 +12,15 @@ namespace Sport1
 {
     public partial class Inicio : Form
     {
-        string nombre1;
-        int i = 0;
+        int pos = 38;
+        int cantPerfiles = 0;
         string[] nombres = new string[1000];
         public void pasarDatos (string hola)
         {
-            nombres[i] = hola;
-            i++;
-            MessageBox.Show(nombres[0]);
-            
+            nombres[cantPerfiles] = hola;
+            cantPerfiles++;            
         }
+        
         
         public Inicio()
         {
@@ -37,12 +36,20 @@ namespace Sport1
 
         private void Inicio_Load(object sender, EventArgs e)
         {
-            Button btnPerfil1 = new Button();
-            btnPerfil1.DialogResult = DialogResult.OK;
-            btnPerfil1.Text = "Perfil 1";
-            btnPerfil1.Location = new Point (24,38);
-            btnPerfil1.Size = new Size(160, 70);
-            Controls.Add(btnPerfil1);
+            //cant de  perfiles
+            
+
+            for (int p = 0; p < cantPerfiles; p++)
+            {
+                Button btnPerfil1 = new Button();
+                btnPerfil1.DialogResult = DialogResult.OK;
+                btnPerfil1.Text = "Perfil " + cantPerfiles;
+                btnPerfil1.Location = new Point(24, pos);
+                pos += 500;
+                btnPerfil1.Size = new Size(160, 70);
+                Controls.Add(btnPerfil1);
+
+            }
         }
     }
 }
