@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Sport1
 {
-    public partial class Agenda1 : Form
+    public partial class objfutbol : Form
     {
-        public Agenda1()
+        public objfutbol()
         {
             InitializeComponent();
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

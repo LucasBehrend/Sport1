@@ -52,11 +52,11 @@
     <Compile Include="Agenda.Designer.cs">
       <DependentUpon>Agenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Agenda1.cs">
+    <Compile Include="objfutbol.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Agenda1.Designer.cs">
-      <DependentUpon>Agenda1.cs</DependentUpon>
+    <Compile Include="objfutbol.Designer.cs">
+      <DependentUpon>objfutbol.cs</DependentUpon>
     </Compile>
     <Compile Include="CrearPerfil.cs">
       <SubType>Form</SubType>
@@ -87,8 +87,8 @@
     <EmbeddedResource Include="Agenda.resx">
       <DependentUpon>Agenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Agenda1.resx">
-      <DependentUpon>Agenda1.cs</DependentUpon>
+    <EmbeddedResource Include="objfutbol.resx">
+      <DependentUpon>objfutbol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrearPerfil.resx">
       <DependentUpon>CrearPerfil.cs</DependentUpon>
