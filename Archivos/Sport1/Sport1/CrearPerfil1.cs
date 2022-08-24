@@ -12,7 +12,7 @@ namespace Sport1
 {
     public partial class CrearPerfil1 : Form
     {
-        Inicio f2 = new Inicio();
+        public Inicio f2;
         string nombre;
         public CrearPerfil1()
         {
