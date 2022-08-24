@@ -48,11 +48,11 @@ namespace Sport1
             //cant de  perfiles
             if (cantPerfiles > 0)
             {
-                
-                
+
+
                 Button btnPerfil1 = new Button();
                 btnPerfil1.DialogResult = DialogResult.OK;
-                btnPerfil1.Text = "Perfil " + cantPerfiles;
+                btnPerfil1.Text = "Perfil" + cantPerfiles;
                 btnPerfil1.Location = new Point(24, pos);
                 pos += 100;
                 btnPerfil1.Size = new Size(160, 70);
