@@ -33,14 +33,16 @@ namespace Sport1
         {
             this.Hide();
             CrearPerfil1 f3 = new CrearPerfil1();
-            f3.f2 = this;
+            f3.f2 = this; 
             f3.Show();
         }
 
         private void click_btn_perfil(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            MessageBox.Show("hola" + btn.Text);
+            Perfil1 f4 = new Perfil1();
+            f4.Show();
+            this.Hide();
         }
 
         private void Inicio_Load(object sender, EventArgs e)
@@ -52,7 +54,7 @@ namespace Sport1
 
                 Button btnPerfil1 = new Button();
                 btnPerfil1.DialogResult = DialogResult.OK;
-                btnPerfil1.Text = "Perfil" + cantPerfiles;
+                btnPerfil1.Text = nombres[cantPerfiles - 1];
                 btnPerfil1.Location = new Point(24, pos);
                 pos += 100;
                 btnPerfil1.Size = new Size(160, 70);
