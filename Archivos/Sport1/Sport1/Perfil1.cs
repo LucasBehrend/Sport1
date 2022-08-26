@@ -12,6 +12,9 @@ namespace Sport1
 {
     public partial class Perfil1 : Form
     {
+        CrearPerfil1 formCrerPerfil =
+        public Inicio formInicio;
+        lblNomPerfil  = for 
         public Perfil1()
         {
             InitializeComponent();
@@ -24,8 +27,14 @@ namespace Sport1
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            
+            formInicio.Show();
+            this.Hide();
 
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -32,16 +32,17 @@ namespace Sport1
         private void BtnCrearPerfil_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CrearPerfil1 f3 = new CrearPerfil1();
-            f3.f2 = this; 
-            f3.Show();
+            CrearPerfil1 formCrearPerfil = new CrearPerfil1();
+            formCrearPerfil.formInicio = this; 
+            formCrearPerfil.Show();
         }
 
         private void click_btn_perfil(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            Perfil1 f4 = new Perfil1();
-            f4.Show();
+            Perfil1 formPerfil1 = new Perfil1();
+            formPerfil1.formInicio = this;
+            formPerfil1.Show();
             this.Hide();
         }
 
