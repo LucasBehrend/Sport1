@@ -42,7 +42,7 @@
             // 
             // btnguardar
             // 
-            this.btnguardar.Location = new System.Drawing.Point(532, 297);
+            this.btnguardar.Location = new System.Drawing.Point(563, 302);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(133, 65);
             this.btnguardar.TabIndex = 0;
@@ -145,7 +145,7 @@
             this.Controls.Add(this.lblobjfutbol);
             this.Controls.Add(this.btnguardar);
             this.Name = "objfutbol";
-            this.Text = "Agenda1";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
