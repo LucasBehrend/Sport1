@@ -13,7 +13,9 @@ namespace Sport1
     public partial class CrearPerfil1 : Form
     {
         public Inicio formInicio;
-        string nombre;
+        public string nombre;
+        public int deporte;
+        public int rol;
         public CrearPerfil1()
         {
             InitializeComponent();
@@ -35,13 +37,13 @@ namespace Sport1
 
         private void CmbRol_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int rol = cmbRol.SelectedIndex;
+            rol = cmbRol.SelectedIndex;
             rol++;
         }
 
         private void CmbDeporte_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int deporte = cmbDeporte.SelectedIndex;
+            deporte = cmbDeporte.SelectedIndex;
             deporte++;
         }
     }

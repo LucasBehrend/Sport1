@@ -30,6 +30,7 @@
         {
             this.btnVolver = new System.Windows.Forms.Button();
             this.lblNomPerfil = new System.Windows.Forms.Label();
+            this.btnIngresarEstadisticas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVolver
@@ -45,19 +46,29 @@
             // lblNomPerfil
             // 
             this.lblNomPerfil.AutoSize = true;
-            this.lblNomPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.lblNomPerfil.Location = new System.Drawing.Point(45, 47);
+            this.lblNomPerfil.Location = new System.Drawing.Point(69, 53);
             this.lblNomPerfil.Name = "lblNomPerfil";
-            this.lblNomPerfil.Size = new System.Drawing.Size(70, 25);
+            this.lblNomPerfil.Size = new System.Drawing.Size(35, 13);
             this.lblNomPerfil.TabIndex = 1;
             this.lblNomPerfil.Text = "label1";
-            this.lblNomPerfil.Click += new System.EventHandler(this.Label1_Click);
+            this.lblNomPerfil.Click += new System.EventHandler(this.LblNomPerfil_Click);
+            // 
+            // btnIngresarEstadisticas
+            // 
+            this.btnIngresarEstadisticas.Location = new System.Drawing.Point(696, 73);
+            this.btnIngresarEstadisticas.Name = "btnIngresarEstadisticas";
+            this.btnIngresarEstadisticas.Size = new System.Drawing.Size(138, 157);
+            this.btnIngresarEstadisticas.TabIndex = 2;
+            this.btnIngresarEstadisticas.Text = "Ingresar estadisticas";
+            this.btnIngresarEstadisticas.UseVisualStyleBackColor = true;
+            this.btnIngresarEstadisticas.Click += new System.EventHandler(this.BtnIngresarEstadisticas_Click);
             // 
             // Perfil1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.Controls.Add(this.btnIngresarEstadisticas);
             this.Controls.Add(this.lblNomPerfil);
             this.Controls.Add(this.btnVolver);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
@@ -73,5 +84,6 @@
 
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Label lblNomPerfil;
+        private System.Windows.Forms.Button btnIngresarEstadisticas;
     }
 }

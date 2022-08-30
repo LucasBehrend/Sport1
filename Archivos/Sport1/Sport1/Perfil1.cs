@@ -12,9 +12,9 @@ namespace Sport1
 {
     public partial class Perfil1 : Form
     {
-        CrearPerfil1 formCrerPerfil =
+        public CrearPerfil1 formCrearPerfil1;
         public Inicio formInicio;
-        lblNomPerfil  = for 
+        
         public Perfil1()
         {
             InitializeComponent();
@@ -22,7 +22,7 @@ namespace Sport1
 
         private void Perfil1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -35,6 +35,16 @@ namespace Sport1
         private void Label1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void LblNomPerfil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnIngresarEstadisticas_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -85,7 +85,7 @@
             "Hockey",
             "Rugby",
             "Tenis",
-            "Voley"});
+            "Voleyball"});
             this.cmbDeporte.Location = new System.Drawing.Point(44, 178);
             this.cmbDeporte.Name = "cmbDeporte";
             this.cmbDeporte.Size = new System.Drawing.Size(121, 21);
