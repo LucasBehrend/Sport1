@@ -35,17 +35,18 @@
             this.lblMinutosJugados = new System.Windows.Forms.Label();
             this.lblTirosFalladosBasket = new System.Windows.Forms.Label();
             this.lblBloqueos = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtaAsistenicasBasket = new System.Windows.Forms.TextBox();
+            this.txtTirosFal = new System.Windows.Forms.TextBox();
+            this.txtMinJugBasket = new System.Windows.Forms.TextBox();
+            this.txtFaltasBasket = new System.Windows.Forms.TextBox();
             this.cmbDiaBasket = new System.Windows.Forms.ComboBox();
             this.lblFechaBasket = new System.Windows.Forms.Label();
             this.cmbAñoBasket = new System.Windows.Forms.ComboBox();
             this.lblBarra1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbMesBasket = new System.Windows.Forms.ComboBox();
+            this.txtBloqueosBasket = new System.Windows.Forms.TextBox();
+            this.btnIngresarBasket = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtPuntosBasket
@@ -54,6 +55,7 @@
             this.txtPuntosBasket.Name = "txtPuntosBasket";
             this.txtPuntosBasket.Size = new System.Drawing.Size(100, 20);
             this.txtPuntosBasket.TabIndex = 0;
+            this.txtPuntosBasket.TextChanged += new System.EventHandler(this.TxtPuntosBasket_TextChanged);
             // 
             // lblPuntosBasket
             // 
@@ -109,40 +111,36 @@
             this.lblBloqueos.TabIndex = 7;
             this.lblBloqueos.Text = "Bloqueos";
             // 
-            // textBox2
+            // txtaAsistenicasBasket
             // 
-            this.textBox2.Location = new System.Drawing.Point(217, 289);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 8;
+            this.txtaAsistenicasBasket.Location = new System.Drawing.Point(217, 166);
+            this.txtaAsistenicasBasket.Name = "txtaAsistenicasBasket";
+            this.txtaAsistenicasBasket.Size = new System.Drawing.Size(100, 20);
+            this.txtaAsistenicasBasket.TabIndex = 9;
+            this.txtaAsistenicasBasket.TextChanged += new System.EventHandler(this.TextBox3_TextChanged);
             // 
-            // textBox3
+            // txtTirosFal
             // 
-            this.textBox3.Location = new System.Drawing.Point(217, 166);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 9;
+            this.txtTirosFal.Location = new System.Drawing.Point(217, 261);
+            this.txtTirosFal.Name = "txtTirosFal";
+            this.txtTirosFal.Size = new System.Drawing.Size(100, 20);
+            this.txtTirosFal.TabIndex = 10;
             // 
-            // textBox4
+            // txtMinJugBasket
             // 
-            this.textBox4.Location = new System.Drawing.Point(217, 261);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 10;
+            this.txtMinJugBasket.Location = new System.Drawing.Point(217, 232);
+            this.txtMinJugBasket.Name = "txtMinJugBasket";
+            this.txtMinJugBasket.Size = new System.Drawing.Size(100, 20);
+            this.txtMinJugBasket.TabIndex = 11;
+            this.txtMinJugBasket.TextChanged += new System.EventHandler(this.TextBox5_TextChanged);
             // 
-            // textBox5
+            // txtFaltasBasket
             // 
-            this.textBox5.Location = new System.Drawing.Point(217, 232);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 11;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(217, 201);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 12;
+            this.txtFaltasBasket.Location = new System.Drawing.Point(217, 201);
+            this.txtFaltasBasket.Name = "txtFaltasBasket";
+            this.txtFaltasBasket.Size = new System.Drawing.Size(100, 20);
+            this.txtFaltasBasket.TabIndex = 12;
+            this.txtFaltasBasket.TextChanged += new System.EventHandler(this.TextBox6_TextChanged);
             // 
             // cmbDiaBasket
             // 
@@ -183,6 +181,7 @@
             this.cmbDiaBasket.Name = "cmbDiaBasket";
             this.cmbDiaBasket.Size = new System.Drawing.Size(71, 21);
             this.cmbDiaBasket.TabIndex = 13;
+            this.cmbDiaBasket.SelectedIndexChanged += new System.EventHandler(this.CmbDiaBasket_SelectedIndexChanged);
             // 
             // lblFechaBasket
             // 
@@ -206,6 +205,7 @@
             this.cmbAñoBasket.Name = "cmbAñoBasket";
             this.cmbAñoBasket.Size = new System.Drawing.Size(71, 21);
             this.cmbAñoBasket.TabIndex = 16;
+            this.cmbAñoBasket.SelectedIndexChanged += new System.EventHandler(this.CmbAñoBasket_SelectedIndexChanged);
             // 
             // lblBarra1
             // 
@@ -247,23 +247,43 @@
             this.cmbMesBasket.Name = "cmbMesBasket";
             this.cmbMesBasket.Size = new System.Drawing.Size(71, 21);
             this.cmbMesBasket.TabIndex = 21;
+            this.cmbMesBasket.SelectedIndexChanged += new System.EventHandler(this.CmbMesBasket_SelectedIndexChanged);
+            // 
+            // txtBloqueosBasket
+            // 
+            this.txtBloqueosBasket.Location = new System.Drawing.Point(217, 289);
+            this.txtBloqueosBasket.Name = "txtBloqueosBasket";
+            this.txtBloqueosBasket.Size = new System.Drawing.Size(100, 20);
+            this.txtBloqueosBasket.TabIndex = 8;
+            this.txtBloqueosBasket.TextChanged += new System.EventHandler(this.TxtBloqueosBasket_TextChanged);
+            // 
+            // btnIngresarBasket
+            // 
+            this.btnIngresarBasket.Location = new System.Drawing.Point(565, 211);
+            this.btnIngresarBasket.Name = "btnIngresarBasket";
+            this.btnIngresarBasket.Size = new System.Drawing.Size(75, 23);
+            this.btnIngresarBasket.TabIndex = 22;
+            this.btnIngresarBasket.Text = "Listo";
+            this.btnIngresarBasket.UseVisualStyleBackColor = true;
+            this.btnIngresarBasket.Click += new System.EventHandler(this.BtnIngresarBasket_Click);
             // 
             // IngresarEstadisticasBasket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnIngresarBasket);
             this.Controls.Add(this.cmbMesBasket);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblBarra1);
             this.Controls.Add(this.cmbAñoBasket);
             this.Controls.Add(this.lblFechaBasket);
             this.Controls.Add(this.cmbDiaBasket);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtFaltasBasket);
+            this.Controls.Add(this.txtMinJugBasket);
+            this.Controls.Add(this.txtTirosFal);
+            this.Controls.Add(this.txtaAsistenicasBasket);
+            this.Controls.Add(this.txtBloqueosBasket);
             this.Controls.Add(this.lblBloqueos);
             this.Controls.Add(this.lblTirosFalladosBasket);
             this.Controls.Add(this.lblMinutosJugados);
@@ -288,16 +308,17 @@
         private System.Windows.Forms.Label lblMinutosJugados;
         private System.Windows.Forms.Label lblTirosFalladosBasket;
         private System.Windows.Forms.Label lblBloqueos;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtaAsistenicasBasket;
+        private System.Windows.Forms.TextBox txtTirosFal;
+        private System.Windows.Forms.TextBox txtMinJugBasket;
+        private System.Windows.Forms.TextBox txtFaltasBasket;
         private System.Windows.Forms.ComboBox cmbDiaBasket;
         private System.Windows.Forms.Label lblFechaBasket;
         private System.Windows.Forms.ComboBox cmbAñoBasket;
         private System.Windows.Forms.Label lblBarra1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbMesBasket;
+        private System.Windows.Forms.TextBox txtBloqueosBasket;
+        private System.Windows.Forms.Button btnIngresarBasket;
     }
 }
