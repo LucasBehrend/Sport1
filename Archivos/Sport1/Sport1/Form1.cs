@@ -25,8 +25,8 @@ namespace Sport1
         private void Button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Inicio f2 = new Inicio();
-            f2.Show();
+            Inicio formInicio = new Inicio();
+            formInicio.Show();
         }
     }
 }
