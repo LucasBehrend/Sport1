@@ -23,6 +23,7 @@ namespace Sport1
         public string minJugBasket;
         public string tirosFalBasket;
         public string bloqueosBasket;
+        CrearPerfil1 formCrearPerfil1;
         public IngresarEstadisticasBasket()
         {
             InitializeComponent();
@@ -80,7 +81,7 @@ namespace Sport1
 
         private void BtnIngresarBasket_Click(object sender, EventArgs e)
         {
-            f
+            if ()
         }
     }
 }
