@@ -52,11 +52,17 @@
     <Compile Include="Agenda.Designer.cs">
       <DependentUpon>Agenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="IngresarEstadisticasBasket.cs">
+    <Compile Include="IngresarEstadisticas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IngresarEstadisticasBasket.Designer.cs">
-      <DependentUpon>IngresarEstadisticasBasket.cs</DependentUpon>
+    <Compile Include="IngresarEstadisticas.Designer.cs">
+      <DependentUpon>IngresarEstadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarEstadisticasFutbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarEstadisticasFutbol.Designer.cs">
+      <DependentUpon>IngresarEstadisticasFutbol.cs</DependentUpon>
     </Compile>
     <Compile Include="objfutbol.cs">
       <SubType>Form</SubType>
@@ -99,8 +105,11 @@
     <EmbeddedResource Include="Agenda.resx">
       <DependentUpon>Agenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IngresarEstadisticasBasket.resx">
-      <DependentUpon>IngresarEstadisticasBasket.cs</DependentUpon>
+    <EmbeddedResource Include="IngresarEstadisticas.resx">
+      <DependentUpon>IngresarEstadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarEstadisticasFutbol.resx">
+      <DependentUpon>IngresarEstadisticasFutbol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="objfutbol.resx">
       <DependentUpon>objfutbol.cs</DependentUpon>

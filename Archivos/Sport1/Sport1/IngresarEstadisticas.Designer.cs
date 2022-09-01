@@ -1,6 +1,6 @@
 ﻿namespace Sport1
 {
-    partial class IngresarEstadisticasBasket
+    partial class IngresarEstadisticas
     {
         /// <summary>
         /// Required designer variable.
@@ -267,11 +267,11 @@
             this.btnIngresarBasket.UseVisualStyleBackColor = true;
             this.btnIngresarBasket.Click += new System.EventHandler(this.BtnIngresarBasket_Click);
             // 
-            // IngresarEstadisticasBasket
+            // IngresarEstadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 749);
+            this.ClientSize = new System.Drawing.Size(1064, 741);
             this.Controls.Add(this.btnIngresarBasket);
             this.Controls.Add(this.cmbMesBasket);
             this.Controls.Add(this.label4);
@@ -291,8 +291,8 @@
             this.Controls.Add(this.lblAsistenciasBasket);
             this.Controls.Add(this.lblPuntosBasket);
             this.Controls.Add(this.txtPuntosBasket);
-            this.Name = "IngresarEstadisticasBasket";
-            this.Text = "IngresarEstadisticasBasket";
+            this.Name = "IngresarEstadisticas";
+            this.Text = "IngresarEstadisticas";
             this.Load += new System.EventHandler(this.IngresarEstadisticas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

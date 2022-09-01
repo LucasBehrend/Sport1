@@ -10,21 +10,22 @@ using System.Windows.Forms;
 
 namespace Sport1
 {
-    public partial class IngresarEstadisticasBasket : Form
+    public partial class IngresarEstadisticas : Form
     {
         public int[] fechaBasket = new int[2000];
-        public int diaBasket;
-        public int mesBasket;
-        public int añoBasket;
-        public int fechaBas;
-        public string puntosBasket;
-        public string asistenciasBasket;
-        public string faltasBasket;
-        public string minJugBasket;
-        public string tirosFalBasket;
-        public string bloqueosBasket;
-        CrearPerfil1 formCrearPerfil1;
-        public IngresarEstadisticasBasket()
+        public int dia;
+        public int mes;
+        public int año;
+        public int fecha;
+        public int puntos;
+        public int asistencias;
+        public int faltas;
+        public int minJugados;
+        public int tirosFal;
+        public int bloqueos;
+        Perfil1 formPerfil1;
+
+        public IngresarEstadisticas()
         {
             InitializeComponent();
         }
@@ -36,52 +37,54 @@ namespace Sport1
 
         private void CmbDiaBasket_SelectedIndexChanged(object sender, EventArgs e)
         {
-            diaBasket = cmbDiaBasket.SelectedIndex;
+            dia = cmbDiaBasket.SelectedIndex;
         }
 
         private void CmbMesBasket_SelectedIndexChanged(object sender, EventArgs e)
         {
-            mesBasket = cmbDiaBasket.SelectedIndex;
+            mes = cmbDiaBasket.SelectedIndex;
         }
 
         private void CmbAñoBasket_SelectedIndexChanged(object sender, EventArgs e)
         {
-            añoBasket = cmbDiaBasket.SelectedIndex;
+            año = cmbDiaBasket.SelectedIndex;
         }
 
         private void TxtPuntosBasket_TextChanged(object sender, EventArgs e)
         {
-            puntosBasket = txtPuntosBasket.Text;
+            puntos = Convert.ToInt32(txtPuntosBasket.Text);
         }
 
         private void TextBox3_TextChanged(object sender, EventArgs e)
         {
-            asistenciasBasket = txtaAsistenicasBasket.Text;
+            asistencias = Convert.ToInt32(txtaAsistenicasBasket.Text);
         }
 
         private void TextBox6_TextChanged(object sender, EventArgs e)
         {
-            faltasBasket = txtFaltasBasket.Text;
+            faltas = Convert.ToInt32(txtFaltasBasket.Text);
         }
 
         private void TextBox5_TextChanged(object sender, EventArgs e)
         {
-            minJugBasket = txtMinJugBasket.Text;
+            minJugados = Convert.ToInt32(txtMinJugBasket.Text);
         }
 
         private void TxtTirosFal_TextChanged(object sender, EventArgs e)
         {
-            tirosFalBasket = txtTirosFal.Text;
+            tirosFal = Convert.ToInt32(txtTirosFal.Text);
         }
 
         private void TxtBloqueosBasket_TextChanged(object sender, EventArgs e)
         {
-            bloqueosBasket = txtBloqueosBasket.Text;
+            bloqueos = Convert.ToInt32(txtBloqueosBasket.Text);
         }
 
         private void BtnIngresarBasket_Click(object sender, EventArgs e)
         {
-            if ()
+            formPerfil1 = new Perfil1();
+            formPerfil1.Show();
+            this.Hide();
         }
     }
 }

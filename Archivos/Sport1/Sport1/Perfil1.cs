@@ -14,6 +14,7 @@ namespace Sport1
     {
         public CrearPerfil1 formCrearPerfil1;
         public Inicio formInicio;
+        public IngresarEstadisticas formIngrEst;
         
         public Perfil1()
         {
@@ -44,7 +45,10 @@ namespace Sport1
 
         private void BtnIngresarEstadisticas_Click(object sender, EventArgs e)
         {
-            if ()
+            
+            formIngrEst = new IngresarEstadisticas();
+            this.Hide();
+            formIngrEstBask.Show();
         }
     }
 }
