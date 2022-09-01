@@ -44,7 +44,7 @@ namespace Sport1
 
         private void BtnIngresarEstadisticas_Click(object sender, EventArgs e)
         {
-
+            if ()
         }
     }
 }
