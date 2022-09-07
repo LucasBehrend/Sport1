@@ -46,7 +46,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cmbMesBasket = new System.Windows.Forms.ComboBox();
             this.txtBloqueosBasket = new System.Windows.Forms.TextBox();
-            this.btnIngresarBasket = new System.Windows.Forms.Button();
+            this.btnIngresarEst = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtPuntosBasket
@@ -257,22 +257,22 @@
             this.txtBloqueosBasket.TabIndex = 8;
             this.txtBloqueosBasket.TextChanged += new System.EventHandler(this.TxtBloqueosBasket_TextChanged);
             // 
-            // btnIngresarBasket
+            // btnIngresarEst
             // 
-            this.btnIngresarBasket.Location = new System.Drawing.Point(565, 211);
-            this.btnIngresarBasket.Name = "btnIngresarBasket";
-            this.btnIngresarBasket.Size = new System.Drawing.Size(75, 23);
-            this.btnIngresarBasket.TabIndex = 22;
-            this.btnIngresarBasket.Text = "Listo";
-            this.btnIngresarBasket.UseVisualStyleBackColor = true;
-            this.btnIngresarBasket.Click += new System.EventHandler(this.BtnIngresarBasket_Click);
+            this.btnIngresarEst.Location = new System.Drawing.Point(565, 211);
+            this.btnIngresarEst.Name = "btnIngresarEst";
+            this.btnIngresarEst.Size = new System.Drawing.Size(75, 23);
+            this.btnIngresarEst.TabIndex = 22;
+            this.btnIngresarEst.Text = "Listo";
+            this.btnIngresarEst.UseVisualStyleBackColor = true;
+            this.btnIngresarEst.Click += new System.EventHandler(this.BtnIngresarBasket_Click);
             // 
             // IngresarEstadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 741);
-            this.Controls.Add(this.btnIngresarBasket);
+            this.Controls.Add(this.btnIngresarEst);
             this.Controls.Add(this.cmbMesBasket);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblBarra1);
@@ -319,6 +319,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbMesBasket;
         private System.Windows.Forms.TextBox txtBloqueosBasket;
-        private System.Windows.Forms.Button btnIngresarBasket;
+        private System.Windows.Forms.Button btnIngresarEst;
     }
 }

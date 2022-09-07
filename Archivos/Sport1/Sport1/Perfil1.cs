@@ -48,7 +48,7 @@ namespace Sport1
             
             formIngrEst = new IngresarEstadisticas();
             this.Hide();
-            formIngrEstBask.Show();
+            formIngrEst.Show();
         }
     }
 }
