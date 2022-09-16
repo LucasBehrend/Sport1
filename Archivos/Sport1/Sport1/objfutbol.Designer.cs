@@ -133,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(807, 450);
             this.Controls.Add(this.txtpases);
             this.Controls.Add(this.lblPases);
             this.Controls.Add(this.textboxfalt);
@@ -145,7 +145,7 @@
             this.Controls.Add(this.lblobjfutbol);
             this.Controls.Add(this.btnguardar);
             this.Name = "objfutbol";
-            this.Text = " ";
+            this.Text = "<";
             this.ResumeLayout(false);
             this.PerformLayout();
 
